@@ -463,7 +463,7 @@ nav ul li a:hover {
 }
 
 #experience h1 {
-    font-size: 2em;
+    font-size: 3em;
     margin-bottom: 10px;
 }
 
@@ -524,3 +524,69 @@ nav ul li a:hover {
     }
     
 }
+
+/*Contact Form*/
+/* Contact Container Styling */
+.contact-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: #121212;
+    padding: 40px 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.contact-method {
+    flex: 1;
+    margin: 20px;
+    text-align: center;
+}
+
+.contact-method h2 {
+    font-size: 1.8em;
+    color: #946371;
+    margin-bottom: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Arial', sans-serif;
+}
+
+.contact-method p a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+    font-weight: bold;
+}
+
+.contact-method p a:hover {
+    color: #946371;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.contact-method h2::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #946371;
+    margin: 10px auto 0;
+}
+
+/* Responsive Design for Smaller Screens */
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-method {
+        margin: 15px 0;
+    }
+}
+
+
+
+
